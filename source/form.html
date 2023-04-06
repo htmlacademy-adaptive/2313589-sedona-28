@@ -46,107 +46,94 @@
 
   <main class="main-container">
 
-    <h1 class="visually-hidden">Седона - город в Аризоне.</h1>
+    <h1 class="visually-hidden">Форма для отзыва.</h1>
 
-    <section class="hero">
-      <div class="hero__wrapper">
+    <section class="hero-review">
+      <div class="hero-review__wrapper">
         <h2 class="visually-hidden">Приветственный логотип города Седона.</h2>
-        <img class="hero__wrapper-image" src="images/welcome.svg" width="282" height="214"
-          alt="Welcom to the gorgeous Sedona, beacause the Grand Canyon sucks!">
+        <img class="hero-review__image" src="images/sedona.svg" width="229" height="39" alt=Sedona.>
       </div>
     </section>
 
-    <section class="advantages">
-      <div class="advantages__wrapper">
-        <header class="advantages-header">
-          <h2 class="visually-hidden">Приемущества города Седона.</h2>
-          <h3 class="advantages-header__title title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h3>
-            <p class="advantages-header__description description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    <section class="review">
+      <div class="review__wrapper">
+        <header class="review-header">
+          <h2 class="visually-hidden">Оставить отзыв.</h2>
+          <h3 class="review-header__title">Оставьте свой отзыв</h3>
+          <p class="review-header__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+            вами достопримечательностях</p>
         </header>
       </div>
-
-      <div class="advantages__wrapper">
-        <ul class="advantages__list advantages__list--revers">
-          <li class="advantages__item">
-            <h3 class="advantages__title title">НАСТОЯЩИЙ ГОРОДОК</h3>
-            <p class="advantages__number number">— №1 —</p>
-            <p class="advantages__description description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-          </li>
-          <li class="advantages__item">
-            <img class="advantages__item advantages__item--image" src="#" width="520" height="260" alt="Дома с флагами на фоне гор.">
-          </li>
-        </ul>
-      </div>
-
-      <div class="advantages__wrapper">
-        <ul class="advantages__list advantages__list--service">
-          <li class="advantages__item advantages__item--house">
-            <h3 class="advantages__title title">Жилье</h3>
-            <p class="advantages__description description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </li>
-          <li class="advantages__item advantages__item--burger">
-            <h3 class="advantages__title title">ЕДА</h3>
-            <p class="advantages__description description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-          </li>
-          <li class="advantages__item advantages__item--gift">
-            <h3 class="advantages__title title">СУВЕНИРЫ</h3>
-            <p class="advantages__description description">Не только китайского, но и местного производства!</p>
-          </li>
-        </ul>
-
-        <div class="advantages__wrapper">
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <h3 class="advantages__title title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
-              <p class="advantages__number number">— №2 —</p>
-              <p class="advantages__description description">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
-            </li>
-            <li class="advantages__item">
-              <img class="advantages__item advantages__item--image" src="#" width="520" height="260" alt="Мост дьявола на фоне гор.">
-            </li>
-
-            <li class="advantages__item">
-              <h3 class="advantages__title title">Небольшая<br> площадь</h3>
-              <p class="advantages__number number">— №3 —</p>
-              <p class="advantages__description description">Все интересные места<br> находятся очень близко</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title title">Красивая<br> дорог</h3>
-              <p class="advantages__number number">— №4 —</p>
-              <p class="advantages__description description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title title">Мало<br> туристов</h3>
-              <p class="advantages__number number">— №5 —</p>
-              <p class="advantages__description description">Большинство едет в Гранд<br> Каньон и толпится там</p>
-            </li>
-          </ul>
-        </div>
-
-      </div>
     </section>
 
-    <section class="interested">
-      <h2 class="visually-hidden">Гостиницы в Седоне.</h2>
-      <div class="interested-wrapper">
-        <h3 class="interested__titel title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
-        <p class="interested__description description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
-          гостиниц в Седоне</p>
-        <a class="interested__button button" href="#">НАЙТИ ГОСТИНИЦУ</a>
-      </div>
-    </section>
+    <section class="form">
+      <div class="form__wrapper">
+        <h2 class="visually-hidden">Анкета.</h2>
 
-    <section class="map">
-      <div class="map__wrapper">
-        <h2 class="visually-hidden">Как к нам добраться, по карте.</h2>
-        <img class="map__image" src="#" width="320" height="350" alt="Седона на карте штата Аризона.">
+        <form class="form__questionnaire" action="https://echo.htmlacademy.ru/" method="post">
+          <!--Есть ли смысл в fieldset ах и в списках через ul-li?-->
+          <h3 class="form__introduce title">Представьтесь:</h3>
+          <label class="form__first-name name">ИМЯ*:
+            <input type="text" name="form__first-name title--uppercase" placeholder="Пётр" required>
+          </label>
+          <label class="form__first-name name">ФАМИЛИЯ*:
+            <input type="text" name="form__surname-name title--uppercase" placeholder="Пустота" required>
+          </label>
+          <label class="form__first-name name">Отчество:
+            <input type="text" name="form__second-name title--uppercase" placeholder="Викторович">
+          </label>
+
+          <h3 class="form__contact title">Представьтесь:</h3>
+          <label class="form__phone name">Контактный телефон*:
+            <input class="title--uppercase-fill" type="text" name="form__phone-number" placeholder="Введите телефон"
+              required>
+            <img class="form__phone-image" src="#" width="58" height="58" alt="Телефонная трубка.">
+          </label>
+          <label class="form__first-name name">Электронная почта*:
+            <input class="title--uppercase-fill" type="email" name="form__email-name" placeholder="Введите e-mail"
+              required>
+            <img class="form__email-image" src="#" width="58" height="58" alt="Почтовый конверт.">
+          </label>
+
+          <h3 class="form__impression title">ВАше Общее впечатление:</h3>
+          <label class="form__positive title--uppercase">Скорее положительное
+            <input type="radio" name="form__positive" checked>
+          </label>
+          <label class="form__negative title--uppercase">Скорее отрицательное:
+            <input type="radio" name="form__negative">
+          </label>
+          <label class="form__confusion title--uppercase">Затрудняюсь ответить
+            <input type="radio" name="form__confusion">
+          </label>
+
+          <h3 class="form__looked title">посещенные достопримечательности:</h3>
+          <label class="form__devil-bridge title--uppercase">Мост Дьявола
+            <input type="checkbox" name="form__devil-bridge" checked>
+          </label>
+          <label class="form__bell-mountain title--uppercase">Гора-Колокол
+            <input type="checkbox" name="form__bell-mountain" checked>
+          </label>
+          <label class="form__slide-park title--uppercase">Слайд-парк
+            <input type="checkbox" name="form__slide-park" checked>
+          </label>
+          <label class="form__red-rocks title--uppercase">Красные скалы
+            <input type="checkbox" name="form__red-rocks">
+          </label>
+
+          <h3 class="form__description-of-emotions title">Опишите свои эмоции:</h3>
+          <textarea class="title--uppercase-fill" name="text" cols="20" rows="7"
+            placeholder="Опишите подробно все свои восторги "></textarea>
+
+          <button class="form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+          <span class="form__obligatory-field text">* — обязательные поля</span>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <!--не знаю, что это такое, пока будет лого с активной ссылкой :)-->
+      <!--не знаю, что это такое, пока будет лого с активной ссылкой -->
       <div class="main-footer__logo-visitsedona">
         <h2 class="visually-hidden">Ссылка на хэштэг visitsedona.</h2>
         <a class="logo-visitsedona" href="#">
@@ -191,7 +178,7 @@
         </ul>
       </div>
 
-      <div class="main-footer__logo-HTMLAcademy copyright">
+      <div class="main-footer__logo-HTMLAcademy">
         <h2 class="visually-hidden">РАЗРАБОТАНО.</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/"></a>
         <svg xmlns="http://www.w3.org/2000/svg" width="129" height="36" viewBox="0 0 129 36">
@@ -203,6 +190,24 @@
     </div>
 
   </footer>
+
+  <div class="modal__container--error modal-close">
+    <div class="modal">
+      <h2 class="modal__title title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+      <p class="modal__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <button class="modal__button button" type="submit">OK</button>
+    </div>
+  </div>
+
+  <div class="modal__container modal-close">
+    <div class="modal">
+      <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
+      <p class="modal__description description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время
+        мы опубликуем его на сайте.</p>
+      <button class="modal__button--field button" type="submit">ЗАкРЫТЬ ОКНО</button>
+    </div>
+  </div>
 
 </body>
 
