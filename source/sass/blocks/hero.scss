@@ -1,0 +1,17 @@
+.hero {
+  min-height: 389px;
+  background-image: url("../img/index/triangle-hero.svg"), url("../img/index/hero-background-index.jpg");
+  background-color: #82B3D2;
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat;
+  background-position: center 332px, center 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero__wrapper-image {
+  margin: 0 auto;
+}
+

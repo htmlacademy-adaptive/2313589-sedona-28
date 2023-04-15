@@ -1,0 +1,16 @@
+.hero-review {
+  min-height: 214px;
+  background-image: url("../img/form/triangle-form-hero.svg"), url("../img/form/background-form-hero.jpg");
+  background-color: #996633;
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat;
+  background-position: center 158px, center 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-review__image {
+  margin: 0 auto;
+}

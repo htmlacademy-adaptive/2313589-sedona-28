@@ -1,0 +1,24 @@
+.review {
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.review__wrapper {
+  width: 320px;
+  min-height: 126px;
+  text-align: center;
+}
+
+.review-header__title {
+  padding-top: 36px;
+  padding-bottom: 24px;
+  text-align: center;
+}
+
+.review-header__description {
+  padding-bottom: 53px;
+}

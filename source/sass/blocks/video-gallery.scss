@@ -1,0 +1,21 @@
+.video-gallery {
+  width: 320px;
+}
+
+.video-gallery__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-gallery__title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.video-gallery__description {
+  text-align: center;
+  padding-bottom: 38px;
+}

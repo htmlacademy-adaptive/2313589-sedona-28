@@ -1,0 +1,19 @@
+.main-header {
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+  max-height: 56px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.main-header__logo {
+  display: block;
+}
+
+.main-header__logo-image {
+  z-index: 1;
+  width: 185px;
+  margin-left: 67px; /* Замерял расстояние нарисовав рамку */
+}
