@@ -2,7 +2,7 @@
   padding-top: 38px;
 }
 
-.interested-wrapper {
+.interested__wrapper {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -10,10 +10,14 @@
 }
 
 .interested__titel {
+  margin: 0;
+  padding: 0;
   padding-bottom: 30px;
 }
 
 .interested__description {
+  margin: 0;
+  padding: 0;
   padding-bottom: 30px;
 }
 

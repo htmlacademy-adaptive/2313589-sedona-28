@@ -23,57 +23,31 @@
 .form__impression,
 .form__looked,
 .form__description-of-emotions {
+  margin: 0;
+  padding: 0;
   padding-bottom: 20px;
   text-align: center;
 }
 
-.field {
-  margin: 0 auto; // Почему не могу убрать margin: 2px; от настроек браузера?
-  width: 280px;
-  padding: 16px;
-  padding-right: 0;
-  background-color: rgba(242, 242, 242, 1);
-  border: none;
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
-  box-sizing: border-box;
-}
-
-.form__impression,
-.control-label {
+.form__impression {
   color: #000000;
 }
 
 /* Представьтесь */
 .form__form-name {
   margin-bottom: 64px;
+  &--group {
+    border: none;
+  }
 }
 
 /* Контактная информация */
 .form__form-contact {
   margin-bottom: 59px;
-}
-
-.form-phone__wrapper,
-.form-email__wrapper {
-  display: flex;
-  flex-direction: row;
-}
-
-.form-phone__wrapper .field,
-.form-email__wrapper .field {
-  padding-left: 18px;
-  flex-grow: 1;
-}
-
-.form-phone__img,
-.form-email__img {
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
+  &--phone,
+  &--email {
+    border: none;
+  }
 }
 
 /* Ваше общее впечатлене */
@@ -81,13 +55,13 @@
   margin-bottom: 49px;
 }
 
-.control-circl {
+.form__control-circl {
   position: relative;
   display: block;
   padding: 14px 15px 16px 50px;
 }
 
-.control-mark-circl {
+.form__control-mark-circl {
   position: absolute;
   top: 9px;
   left: -12px;
@@ -97,11 +71,11 @@
   border-radius: 50%;
 }
 
-.control-mark-circl:last-child {
+.form__control-mark-circl:last-child {
   margin-bottom: 0;
 }
 
-.control-input[type="radio"]:checked + .control-mark-circl::before {
+.form__control-input[type="radio"]:checked + .form__control-mark-circl::before {
   position: absolute;
   top: 14px;
   left: 15px;
@@ -113,11 +87,11 @@
   background-repeat: no-repeat;
 }
 
-.control-input:hover + .control-mark-circl {
+.form__control-input:hover + .form__control-mark-circl {
   background-color: #e5e5e5;
 }
 
-.control-input:active + .control-mark-circl {
+.form__control-input:active + .form__control-mark-circl {
   background-color: rgba(213, 213, 213, 1);
 }
 
@@ -126,13 +100,13 @@
   margin-bottom: 49px;
 }
 
-.control-square {
+.form__control-square {
   position: relative;
   display: block;
   padding: 20px 15px 16px 50px;
 }
 
-.control-mark-square {
+.form__control-mark-square {
   position: absolute;
   top: 9px;
   left: -12px;
@@ -142,7 +116,7 @@
   border-radius: 4px;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark-square::before {
+.form__control-input[type="checkbox"]:checked + .form__control-mark-square::before {
   position: absolute;
   top: 17px;
   left: 12px;
@@ -153,27 +127,12 @@
   background-repeat: no-repeat;
 }
 
-.control-input:hover + .control-mark-square {
+.form__control-input:hover + .form__control-mark-square {
   background-color: #e5e5e5;
 }
 
-.control-input:active + .control-mark-square {
+.form__control-input:active + .form__control-mark-square {
   background-color: rgba(213, 213, 213, 1);
-}
-
-/* Опишите свои эмоции */
-.title--uppercase-fill {
-  min-height: 125px;
-  background-color: rgba(242, 242, 242, 1);
-  color: rgba(0, 0, 0, 0.3);
-  padding: 16px;
-  font-family: inherit;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  border: none;
-  resize: none;
-  margin-bottom: 56px;
 }
 
 /* Кнопка */
@@ -196,36 +155,4 @@
 .form__obligatory-field {
   margin-right: 20px;
   color: rgba(51, 51, 51, 0.6);
-}
-
-/* Модальные окна */
-.modal {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.modal__title {
-  padding-bottom: 36px;
-}
-
-.modal__description {
-  margin: 0 auto;
-  width: 244px;
-  margin-bottom: 30px;
-  &--error {
-    margin-bottom: 28px;
-  }
-}
-
-
-.modal__close-button {
-  width: 272px;
-  height: 58px;
-  margin: 20px;
-}
-
-.modal__close-button__wrapper {
-  background-color: rgba(242, 242, 242, 1);
-  min-width: 320px;
 }

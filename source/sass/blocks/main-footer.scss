@@ -7,6 +7,8 @@
 }
 
 .main-footer__link {
+  margin: 0;
+  padding: 0;
   padding-top: 33px;
   padding-bottom: 30px;
   text-align: center;
@@ -20,14 +22,6 @@
 .main-footer__social {
   margin: 0 auto;
   padding: 0;
-}
-
-.social__list {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 0;
-  padding-bottom: 30px;
 }
 
 .main-footer__logo-HTMLAcademy {

@@ -8,21 +8,6 @@
   position: relative;
 }
 
-.advantages-header__title {
-  min-width: 284px;
-  min-height: 80px;
-  text-align: center;
-  padding-top: 32px;
-  padding-bottom: 35px;
-}
-
-.advantages-header__description {
-  min-width: 284px;
-  min-height: 42px;
-  text-align: center;
-  padding-bottom: 16px;
-}
-
 .advantages__wrapper--1 {
   background-image: url("../img/index/triangle-advantages.svg");
   background-size: 100% auto, cover;
@@ -36,6 +21,7 @@
 .advantages__list {
   margin: 0 auto;
   padding: 0;
+  list-style-type: none;
   &--service {
     padding-bottom: 46px;
   }
@@ -50,10 +36,10 @@
   justify-content: center;
   text-align: center;
   &--image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  background-color: #996633;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    background-color: #996633;
   }
   &--bridge {
     background-color: #81B3D2;
@@ -88,35 +74,57 @@
 }
 
 .advantages__title {
+  margin: 0;
+  padding: 0;
   padding-top: 54px;
   &--house,
   &--food,
   &--souvenir {
+    margin: 0;
+    padding: 0;
     padding-top: 31px;
     padding-left: 65px;
     padding-bottom: 16px;
     text-align: start;
   }
+  &--bridge {
+    margin: 0;
+    padding: 0;
+  }
   &--grey {
+    margin: 0;
+    padding: 0;
     padding-top: 24px;
   }
 }
 
 .advantages__number {
+  margin: 0;
+  padding: 0;
   padding-top: 11px;
   padding-bottom: 17px;
 }
 
 .advantages__description {
+  margin: 0;
+  padding: 0;
   padding-bottom: 40px;
   &--house,
   &--food,
   &--souvenir {
+    margin: 0;
+    padding: 0;
     padding-left: 65px;
     padding-bottom: 2px;
     text-align: start;
   }
+  &--bridge {
+    margin: 0;
+    padding: 0;
+  }
   &--grey {
+    margin: 0;
+    padding: 0;
     padding-bottom: 24px;
   }
 }

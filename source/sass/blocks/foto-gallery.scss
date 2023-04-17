@@ -11,6 +11,7 @@
 .foto-gallery__list {
   margin: 0 auto;
   padding: 0;
+  list-style-type: none;
 }
 
 .foto-gallery__foto-nature {
@@ -18,11 +19,15 @@
 }
 
 .foto-gallery__title {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
-  line-height: 21px; // Почему шрифт меняет значение, а интервал нет?!
+  line-height: 21px;
 }
 
 .foto-gallery__description {
+  margin: 0;
+  padding: 0;
   text-transform: none;
   padding-bottom: 11px;
 }
@@ -31,4 +36,9 @@
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 48px;
+}
+
+.foto-gallery__rating {
+  margin: 0;
+  padding: 0;
 }

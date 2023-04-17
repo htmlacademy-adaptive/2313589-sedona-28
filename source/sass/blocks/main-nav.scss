@@ -14,9 +14,10 @@
 .main-nav__list {
   margin: 0 auto;
   padding: 0;
+  list-style-type: none;
 }
 
-.site-first-list__item,
+.site-first-list__item, // Если идёт как 2й класс в списке, тоже нужен свой файл в папке blocks?)
 .site-second-list__item {
   width: 320px;
   height: 55px;
