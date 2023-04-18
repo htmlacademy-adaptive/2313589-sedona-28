@@ -1,0 +1,158 @@
+.form {
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Общие */
+.form__form-name,
+.form__form-contact,
+.form__form-impression,
+.form__form-looked,
+.form__form-description-of-emotions {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form__introduce,
+.form__contact,
+.form__impression,
+.form__looked,
+.form__description-of-emotions {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.form__impression {
+  color: #000000;
+}
+
+/* Представьтесь */
+.form__form-name {
+  margin-bottom: 64px;
+  &--group {
+    border: none;
+  }
+}
+
+/* Контактная информация */
+.form__form-contact {
+  margin-bottom: 59px;
+  &--phone,
+  &--email {
+    border: none;
+  }
+}
+
+/* Ваше общее впечатлене */
+.form__form-impression {
+  margin-bottom: 49px;
+}
+
+.form__control-circl {
+  position: relative;
+  display: block;
+  padding: 14px 15px 16px 50px;
+}
+
+.form__control-mark-circl {
+  position: absolute;
+  top: 9px;
+  left: -12px;
+  width: 46px;
+  height: 46px;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 50%;
+}
+
+.form__control-mark-circl:last-child {
+  margin-bottom: 0;
+}
+
+.form__control-input[type="radio"]:checked + .form__control-mark-circl::before {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: rgba(51, 51, 51, 1);
+  border-radius: 50%;
+  content: "";
+  background-repeat: no-repeat;
+}
+
+.form__control-input:hover + .form__control-mark-circl {
+  background-color: #e5e5e5;
+}
+
+.form__control-input:active + .form__control-mark-circl {
+  background-color: rgba(213, 213, 213, 1);
+}
+
+/* Посещенные достопримечательности */
+.form__form-looked {
+  margin-bottom: 49px;
+}
+
+.form__control-square {
+  position: relative;
+  display: block;
+  padding: 20px 15px 16px 50px;
+}
+
+.form__control-mark-square {
+  position: absolute;
+  top: 9px;
+  left: -12px;
+  width: 46px;
+  height: 46px;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 4px;
+}
+
+.form__control-input[type="checkbox"]:checked + .form__control-mark-square::before {
+  position: absolute;
+  top: 17px;
+  left: 12px;
+  width: 22px;
+  height: 16px;
+  content: "";
+  background-image: url("../img/form/tick.svg");
+  background-repeat: no-repeat;
+}
+
+.form__control-input:hover + .form__control-mark-square {
+  background-color: #e5e5e5;
+}
+
+.form__control-input:active + .form__control-mark-square {
+  background-color: rgba(213, 213, 213, 1);
+}
+
+/* Кнопка */
+.form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  margin-bottom: 46px;
+}
+
+.form__button {
+  width: 280px;
+  height: 58px;
+  padding: 16px 33px;
+  margin-top: 17px;
+  margin-left: 18px;
+  margin-bottom: 3px;
+}
+
+.form__obligatory-field {
+  margin-right: 20px;
+  color: rgba(51, 51, 51, 0.6);
+}

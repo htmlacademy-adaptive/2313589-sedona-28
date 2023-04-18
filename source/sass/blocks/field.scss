@@ -1,0 +1,16 @@
+// Страница Form /* Общие */
+
+.field {
+  margin: 0 auto; // Почему не могу убрать margin: 2px; от настроек браузера? Если указываю body {margin: 0;}? не помогает и теряю центровку.
+  width: 280px;
+  padding: 16px;
+  padding-right: 0;
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  box-sizing: border-box;
+}

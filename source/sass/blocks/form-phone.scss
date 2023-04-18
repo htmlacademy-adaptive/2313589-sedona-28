@@ -1,0 +1,16 @@
+// Страница Form /* Контактная информация */
+.form-phone__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-phone__wrapper .field { // Как быть с оставшимися двумя field тут, переносить как отдельный код или можно оставить тут как комбинированный .field {
+  padding-left: 18px;
+  flex-grow: 1;
+}
+
+.form-phone__img {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}

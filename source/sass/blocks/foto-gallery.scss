@@ -1,0 +1,44 @@
+.foto-gallery {
+  width: 320px;
+}
+
+.foto-gallery__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.foto-gallery__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.foto-gallery__foto-nature {
+  padding-bottom: 15px;
+}
+
+.foto-gallery__title {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.foto-gallery__description {
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  padding-bottom: 11px;
+}
+
+.foto-gallery__like {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 48px;
+}
+
+.foto-gallery__rating {
+  margin: 0;
+  padding: 0;
+}

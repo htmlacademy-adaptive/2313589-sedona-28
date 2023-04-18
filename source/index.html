@@ -4,15 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
-      <img class="main-header__logo-image" src="#" width="320" height="56" alt="Логотип города Седона.">
+      <img class="main-header__logo-image" src="../source/img/header/header-logo.svg" width="185" height="96"
+        alt="Логотип города Седона.">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+      <!--<button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
@@ -39,7 +41,7 @@
               HTML Academy
             </a>
           </li>
-        </ul>
+        </ul>-->
       </div>
     </nav>
   </header>
@@ -51,21 +53,23 @@
     <section class="hero">
       <div class="hero__wrapper">
         <h2 class="visually-hidden">Приветственный логотип города Седона.</h2>
-        <img class="hero__wrapper-image" src="images/welcome.svg" width="282" height="214"
+        <img class="hero__wrapper-image" src="../source/img/index/hero-image-index.svg" width="282" height="214"
           alt="Welcom to the gorgeous Sedona, beacause the Grand Canyon sucks!">
       </div>
     </section>
 
     <section class="advantages">
-      <div class="advantages__wrapper">
+      <div class="advantages__wrapper advantages__wrapper--0">
         <header class="advantages-header">
           <h2 class="visually-hidden">Приемущества города Седона.</h2>
-          <h3 class="advantages-header__title title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h3>
-            <p class="advantages-header__description description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <h3 class="advantages-header__title title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
+          </h3>
+          <p class="advantages-header__description description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд
+            Каньон!</p>
         </header>
       </div>
 
-      <div class="advantages__wrapper">
+      <div class="advantages__wrapper advantages__wrapper--1">
         <ul class="advantages__list advantages__list--revers">
           <li class="advantages__item">
             <h3 class="advantages__title title">НАСТОЯЩИЙ ГОРОДОК</h3>
@@ -73,52 +77,70 @@
             <p class="advantages__description description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
           </li>
           <li class="advantages__item">
-            <img class="advantages__item advantages__item--image" src="#" width="520" height="260" alt="Дома с флагами на фоне гор.">
+            <img class="advantages__item advantages__item--image" src="../source/img/index/photo-city-advantages.jpg"
+              width="520" height="260" alt="Дома с флагами на фоне гор.">
           </li>
         </ul>
       </div>
 
       <div class="advantages__wrapper">
         <ul class="advantages__list advantages__list--service">
-          <li class="advantages__item advantages__item--house">
-            <h3 class="advantages__title title">Жилье</h3>
-            <p class="advantages__description description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </li>
-          <li class="advantages__item advantages__item--burger">
-            <h3 class="advantages__title title">ЕДА</h3>
-            <p class="advantages__description description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-          </li>
-          <li class="advantages__item advantages__item--gift">
-            <h3 class="advantages__title title">СУВЕНИРЫ</h3>
-            <p class="advantages__description description">Не только китайского, но и местного производства!</p>
-          </li>
+          <div class="advantages__list--house">
+            <li class="advantages__item advantages__item--house">
+              <h3 class="advantages__title--house title">Жилье</h3>
+              <p class="advantages__description--house description">Рекомендуем пожить в настоящем мотеле, все как в
+                кино!</p>
+            </li>
+          </div>
+          <div class="advantages__list--food">
+            <li class="advantages__item advantages__item--food">
+              <h3 class="advantages__title--food title">ЕДА</h3>
+              <p class="advantages__description--food description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ
+                разочаруетесь!</p>
+            </li>
+          </div>
+          <div class="advantages__list--souvenir">
+            <li class="advantages__item advantages__item--souvenir">
+              <h3 class="advantages__title--souvenir title">СУВЕНИРЫ</h3>
+              <p class="advantages__description--souvenir description">Не только китайского, но и местного производства!
+              </p>
+            </li>
+          </div>
         </ul>
 
         <div class="advantages__wrapper">
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <h3 class="advantages__title title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+          <ul class="advantages__list advantages__list--bridge">
+            <li class="advantages__item advantages__item--bridge">
+              <h3 class="advantages__title--bridge title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
               <p class="advantages__number number">— №2 —</p>
-              <p class="advantages__description description">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
+              <p class="advantages__description--bridge description">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ,
+                КОНЕЧНО</p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__item advantages__item--image" src="#" width="520" height="260" alt="Мост дьявола на фоне гор.">
+              <img class="advantages__item advantages__item--image" src="../source/img/index/devil-bridge.jpg"
+                width="520" height="260" alt="Мост дьявола на фоне гор.">
             </li>
+          </ul>
+        </div>
 
-            <li class="advantages__item">
-              <h3 class="advantages__title title">Небольшая<br> площадь</h3>
+        <div class="advantages__wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--grey">
+              <h3 class="advantages__title--grey title">Небольшая<br> площадь</h3>
               <p class="advantages__number number">— №3 —</p>
-              <p class="advantages__description description">Все интересные места<br> находятся очень близко</p>
+              <p class="advantages__description--grey description">Все интересные места<br> находятся очень близко</p>
             </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title title">Красивая<br> дорог</h3>
+            <li class="advantages__item advantages__item--grey">
+              <h3 class="advantages__title--grey title">Красивая<br> дорог</h3>
               <p class="advantages__number number">— №4 —</p>
-              <p class="advantages__description description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+              <p class="advantages__description--grey description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!
+              </p>
             </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title title">Мало<br> туристов</h3>
+            <li class="advantages__item advantages__item--grey">
+              <h3 class="advantages__title--grey title">Мало<br> туристов</h3>
               <p class="advantages__number number">— №5 —</p>
-              <p class="advantages__description description">Большинство едет в Гранд<br> Каньон и толпится там</p>
+              <p class="advantages__description--grey description">Большинство едет в Гранд<br> Каньон и толпится там
+              </p>
             </li>
           </ul>
         </div>
@@ -128,9 +150,10 @@
 
     <section class="interested">
       <h2 class="visually-hidden">Гостиницы в Седоне.</h2>
-      <div class="interested-wrapper">
+      <div class="interested__wrapper">
         <h3 class="interested__titel title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
-        <p class="interested__description description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
+        <p class="interested__description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+          предложения
           гостиниц в Седоне</p>
         <a class="interested__button button" href="#">НАЙТИ ГОСТИНИЦУ</a>
       </div>
@@ -139,7 +162,8 @@
     <section class="map">
       <div class="map__wrapper">
         <h2 class="visually-hidden">Как к нам добраться, по карте.</h2>
-        <img class="map__image" src="#" width="320" height="350" alt="Седона на карте штата Аризона.">
+        <img class="map__image" src="../source/img/index/map-mobile.jpg" width="320" height="350"
+          alt="Седона на карте штата Аризона.">
       </div>
     </section>
   </main>
@@ -150,41 +174,48 @@
       <div class="main-footer__logo-visitsedona">
         <h2 class="visually-hidden">Ссылка на хэштэг visitsedona.</h2>
         <a class="logo-visitsedona" href="#">
-          <p>#VISITSEDONA</p>
+          <p class="main-footer__link">#VISITSEDONA</p>
         </a>
       </div>
 
       <div class="main-footer__social social">
         <h2 class="visually-hidden">Социальные сети.</h2>
-        <!--проверить иконки-->
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте.</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="14" viewBox="0 0 25 14">
-                <path fill-rule="evenodd"
-                  d="M23.95.948c.166-.546 0-.948-.795-.948H20.53c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.191-.418-.738V.948c0-.656-.184-.948-.74-.948H9.65c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.211-4.34-6.885C4.949.288 4.698 0 4.027 0H1.4C.65 0 .5.347.5.73c0 .682.89 4.07 4.145 8.551C6.815 12.341 9.87 14 12.653 14c1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667C19.61 13.216 19.903 14 20.905 14h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.81-1.858-.388-.491-.277-.71 0-1.147 0 0 3.2-4.426 3.534-5.929Z"
-                  clip-rule="evenodd" fill="currentColor" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48">
+                <path fill="#81B3D2" d="M0 0h48v48H0z" />
+                <g clip-path="url(#a)">
+                  <path fill="#fff" fill-rule="evenodd"
+                    d="M35.5 18c.1-.6 0-1-.8-1H32c-.6 0-1 .3-1.1.7 0 0-1.3 3.2-3.2 5.3-.7.6-1 .8-1.3.8-.1 0-.4-.2-.4-.7v-5.2c0-.6-.2-.9-.7-.9h-4.1c-.5 0-.7.3-.7.6 0 .6 1 .8 1 2.5V24c0 .8-.1 1-.5 1-.9 0-3-3.2-4.3-6.9-.3-.7-.5-1-1.2-1H13c-.8 0-.9.3-.9.7 0 .7.9 4.1 4.1 8.6 2.2 3 5.3 4.7 8 4.7 1.7 0 2-.4 2-1v-2.3c0-.8 0-.9.6-.9.4 0 1 .2 2.6 1.7 1.8 1.7 2.1 2.5 3.1 2.5H35c.8 0 1.2-.4 1-1.1-.3-.7-1.1-1.8-2.3-3L32 25c-.4-.5-.3-.7 0-1.1 0 0 3.2-4.4 3.5-6Z"
+                    clip-rule="evenodd" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M12 12h24v24H12z" />
+                  </clipPath>
+                </defs>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy ">
               <span class="visually-hidden">Телеграмм.</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16">
-                <path
-                  d="M17.285.1 1.341 6.247c-1.088.437-1.082 1.044-.2 1.315L5.235 8.84l9.471-5.976c.448-.273.857-.126.52.172L7.554 9.962h-.002.002l-.282 4.22c.413 0 .596-.19.828-.413l1.988-1.934 4.136 3.055c.763.42 1.31.204 1.5-.706L18.438 1.39C18.716.276 18.013-.229 17.285.1Z"
-                  fill="currentColor" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48">
+                <path fill="#81B3D2" d="M0 0h48v48H0z" />
+                <path fill="#fff"
+                  d="m34.4 16.6-3.1 15c-.3 1-.9 1.3-1.8.8l-4.8-3.6-2.3 2.3c-.3.2-.5.4-1 .4l.3-4.9 9-8c.4-.4-.1-.6-.6-.3l-11 7-4.8-1.5c-1-.3-1-1 .2-1.5L33 15c.9-.3 1.6.2 1.3 1.5Z" />
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Ютюб.</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18">
-                <path
-                  d="M19.107.5H3.674C1.814.5.5 2.094.5 3.9v10.094c0 1.912 1.314 3.506 3.174 3.506h15.652c1.642 0 3.174-1.594 3.174-3.4V3.9C22.281 2.094 20.968.5 19.107.5ZM8.162 13.037V4.963L15.495 9l-7.333 4.037Z"
-                  fill="currentColor" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48">
+                <path fill="#81B3D2" d="M0 0h48v48H0z" />
+                <path fill="#fff"
+                  d="M31.2 17H16.8a2.9 2.9 0 0 0-2.8 2.8v8.3c0 1.6 1.3 2.9 2.8 2.9h14.4c1.6 0 2.8-1.3 2.8-2.8v-8.4c0-1.5-1.2-2.8-2.8-2.8ZM21 27.4v-6.8L28 24 21 27.4Z" />
               </svg>
             </a>
           </li>

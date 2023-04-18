@@ -1,0 +1,33 @@
+.main-footer {
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer__link {
+  margin: 0;
+  padding: 0;
+  padding-top: 33px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-footer__social {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-footer__logo-HTMLAcademy {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 33px;
+}

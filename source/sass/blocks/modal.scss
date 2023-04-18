@@ -1,0 +1,35 @@
+// Страница Form /* Модальные окна */
+.modal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.modal__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 36px;
+}
+
+.modal__description {
+  margin: 0 auto;
+  padding: 0;
+  width: 244px;
+  margin-bottom: 30px;
+  &--error {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 28px;
+  }
+}
+
+.modal__close-button {
+  width: 272px;
+  height: 58px;
+  margin: 20px;
+}
+
+.modal__close-button__wrapper {
+  background-color: rgba(242, 242, 242, 1);
+  min-width: 320px;
+}

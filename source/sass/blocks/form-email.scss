@@ -1,0 +1,17 @@
+// Страница Form /* Контактная информация */
+.form-email__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+// Как быть с оставшимися двумя field тут, переносить как отдельный код или можно оставить тут как комбинированный?
+.form-email__wrapper .field {
+  padding-left: 18px;
+  flex-grow: 1;
+}
+
+.form-email__img {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
