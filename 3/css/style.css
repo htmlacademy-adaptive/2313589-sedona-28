@@ -50,21 +50,8 @@ img {
   font-weight: 700;
 }
 
-h1, h2, h3, p {
-  margin: 0;
-  padding: 0;
-}
-
 a {
   text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
-}
-
-fieldset {
-  border: none;
 }
 
 .button {
@@ -104,17 +91,9 @@ fieldset {
   overflow: hidden;
 }
 
-.advantages {
-  margin: 0 auto;
-  padding: 0;
-  width: 320px;
-  min-height: 1841px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
 .advantages-header__title {
+  margin: 0;
+  padding: 0;
   min-width: 284px;
   min-height: 80px;
   text-align: center;
@@ -123,10 +102,22 @@ fieldset {
 }
 
 .advantages-header__description {
+  margin: 0;
+  padding: 0;
   min-width: 284px;
   min-height: 42px;
   text-align: center;
   padding-bottom: 16px;
+}
+
+.advantages {
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+  min-height: 1841px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .advantages__wrapper--1 {
@@ -142,6 +133,7 @@ fieldset {
 .advantages__list {
   margin: 0 auto;
   padding: 0;
+  list-style-type: none;
 }
 .advantages__list--service {
   padding-bottom: 46px;
@@ -194,37 +186,110 @@ fieldset {
 }
 
 .advantages__title {
+  margin: 0;
+  padding: 0;
   padding-top: 54px;
 }
 .advantages__title--house, .advantages__title--food, .advantages__title--souvenir {
+  margin: 0;
+  padding: 0;
   padding-top: 31px;
   padding-left: 65px;
   padding-bottom: 16px;
   text-align: start;
 }
+.advantages__title--bridge {
+  margin: 0;
+  padding: 0;
+}
 .advantages__title--grey {
+  margin: 0;
+  padding: 0;
   padding-top: 24px;
 }
 
 .advantages__number {
+  margin: 0;
+  padding: 0;
   padding-top: 11px;
   padding-bottom: 17px;
 }
 
 .advantages__description {
+  margin: 0;
+  padding: 0;
   padding-bottom: 40px;
 }
 .advantages__description--house, .advantages__description--food, .advantages__description--souvenir {
+  margin: 0;
+  padding: 0;
   padding-left: 65px;
   padding-bottom: 2px;
   text-align: start;
 }
+.advantages__description--bridge {
+  margin: 0;
+  padding: 0;
+}
 .advantages__description--grey {
+  margin: 0;
+  padding: 0;
   padding-bottom: 24px;
 }
 
 .advantages__list--grey {
   background-color: #eeeeee;
+}
+
+.control-label {
+  color: #000000;
+}
+
+.field {
+  margin: 0 auto;
+  width: 280px;
+  padding: 16px;
+  padding-right: 0;
+  background-color: #f2f2f2;
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+.form-email__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-email__wrapper .field {
+  padding-left: 18px;
+  flex-grow: 1;
+}
+
+.form-email__img {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.form-phone__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-phone__wrapper .field {
+  padding-left: 18px;
+  flex-grow: 1;
+}
+
+.form-phone__img {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .form {
@@ -252,27 +317,13 @@ fieldset {
 .form__impression,
 .form__looked,
 .form__description-of-emotions {
+  margin: 0;
+  padding: 0;
   padding-bottom: 20px;
   text-align: center;
 }
 
-.field {
-  margin: 0 auto;
-  width: 280px;
-  padding: 16px;
-  padding-right: 0;
-  background-color: #f2f2f2;
-  border: none;
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
-  box-sizing: border-box;
-}
-
-.form__impression,
-.control-label {
+.form__impression {
   color: #000000;
 }
 
@@ -280,29 +331,16 @@ fieldset {
 .form__form-name {
   margin-bottom: 64px;
 }
+.form__form-name--group {
+  border: none;
+}
 
 /* Контактная информация */
 .form__form-contact {
   margin-bottom: 59px;
 }
-
-.form-phone__wrapper,
-.form-email__wrapper {
-  display: flex;
-  flex-direction: row;
-}
-
-.form-phone__wrapper .field,
-.form-email__wrapper .field {
-  padding-left: 18px;
-  flex-grow: 1;
-}
-
-.form-phone__img,
-.form-email__img {
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
+.form__form-contact--phone, .form__form-contact--email {
+  border: none;
 }
 
 /* Ваше общее впечатлене */
@@ -310,13 +348,13 @@ fieldset {
   margin-bottom: 49px;
 }
 
-.control-circl {
+.form__control-circl {
   position: relative;
   display: block;
   padding: 14px 15px 16px 50px;
 }
 
-.control-mark-circl {
+.form__control-mark-circl {
   position: absolute;
   top: 9px;
   left: -12px;
@@ -326,11 +364,11 @@ fieldset {
   border-radius: 50%;
 }
 
-.control-mark-circl:last-child {
+.form__control-mark-circl:last-child {
   margin-bottom: 0;
 }
 
-.control-input[type=radio]:checked + .control-mark-circl::before {
+.form__control-input[type=radio]:checked + .form__control-mark-circl::before {
   position: absolute;
   top: 14px;
   left: 15px;
@@ -342,11 +380,11 @@ fieldset {
   background-repeat: no-repeat;
 }
 
-.control-input:hover + .control-mark-circl {
+.form__control-input:hover + .form__control-mark-circl {
   background-color: #e5e5e5;
 }
 
-.control-input:active + .control-mark-circl {
+.form__control-input:active + .form__control-mark-circl {
   background-color: #d5d5d5;
 }
 
@@ -355,13 +393,13 @@ fieldset {
   margin-bottom: 49px;
 }
 
-.control-square {
+.form__control-square {
   position: relative;
   display: block;
   padding: 20px 15px 16px 50px;
 }
 
-.control-mark-square {
+.form__control-mark-square {
   position: absolute;
   top: 9px;
   left: -12px;
@@ -371,7 +409,7 @@ fieldset {
   border-radius: 4px;
 }
 
-.control-input[type=checkbox]:checked + .control-mark-square::before {
+.form__control-input[type=checkbox]:checked + .form__control-mark-square::before {
   position: absolute;
   top: 17px;
   left: 12px;
@@ -382,27 +420,12 @@ fieldset {
   background-repeat: no-repeat;
 }
 
-.control-input:hover + .control-mark-square {
+.form__control-input:hover + .form__control-mark-square {
   background-color: #e5e5e5;
 }
 
-.control-input:active + .control-mark-square {
+.form__control-input:active + .form__control-mark-square {
   background-color: #d5d5d5;
-}
-
-/* Опишите свои эмоции */
-.title--uppercase-fill {
-  min-height: 125px;
-  background-color: #f2f2f2;
-  color: rgba(0, 0, 0, 0.3);
-  padding: 16px;
-  font-family: inherit;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  border: none;
-  resize: none;
-  margin-bottom: 56px;
 }
 
 /* Кнопка */
@@ -427,37 +450,6 @@ fieldset {
   color: rgba(51, 51, 51, 0.6);
 }
 
-/* Модальные окна */
-.modal {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.modal__title {
-  padding-bottom: 36px;
-}
-
-.modal__description {
-  margin: 0 auto;
-  width: 244px;
-  margin-bottom: 30px;
-}
-.modal__description--error {
-  margin-bottom: 28px;
-}
-
-.modal__close-button {
-  width: 272px;
-  height: 58px;
-  margin: 20px;
-}
-
-.modal__close-button__wrapper {
-  background-color: #f2f2f2;
-  min-width: 320px;
-}
-
 .foto-gallery {
   width: 320px;
 }
@@ -471,6 +463,7 @@ fieldset {
 .foto-gallery__list {
   margin: 0 auto;
   padding: 0;
+  list-style-type: none;
 }
 
 .foto-gallery__foto-nature {
@@ -478,11 +471,15 @@ fieldset {
 }
 
 .foto-gallery__title {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 21px;
 }
 
 .foto-gallery__description {
+  margin: 0;
+  padding: 0;
   text-transform: none;
   padding-bottom: 11px;
 }
@@ -491,6 +488,11 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 48px;
+}
+
+.foto-gallery__rating {
+  margin: 0;
+  padding: 0;
 }
 
 .foto-video {
@@ -509,12 +511,16 @@ fieldset {
 }
 
 .foto-video-header__title {
+  margin: 0;
+  padding: 0;
   padding-top: 37px;
   padding-bottom: 35px;
   text-align: center;
 }
 
 .foto-video-header__description {
+  margin: 0;
+  padding: 0;
   padding-bottom: 50px;
 }
 
@@ -573,7 +579,7 @@ fieldset {
   padding-top: 38px;
 }
 
-.interested-wrapper {
+.interested__wrapper {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -581,10 +587,14 @@ fieldset {
 }
 
 .interested__titel {
+  margin: 0;
+  padding: 0;
   padding-bottom: 30px;
 }
 
 .interested__description {
+  margin: 0;
+  padding: 0;
   padding-bottom: 30px;
 }
 
@@ -606,6 +616,8 @@ fieldset {
 }
 
 .main-footer__link {
+  margin: 0;
+  padding: 0;
   padding-top: 33px;
   padding-bottom: 30px;
   text-align: center;
@@ -619,14 +631,6 @@ fieldset {
 .main-footer__social {
   margin: 0 auto;
   padding: 0;
-}
-
-.social__list {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 0;
-  padding-bottom: 30px;
 }
 
 .main-footer__logo-HTMLAcademy {
@@ -670,6 +674,7 @@ fieldset {
 .main-nav__list {
   margin: 0 auto;
   padding: 0;
+  list-style-type: none;
 }
 
 .site-first-list__item,
@@ -688,6 +693,55 @@ fieldset {
   align-items: center;
 }
 
+.modal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.modal__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 36px;
+}
+
+.modal__description {
+  margin: 0 auto;
+  padding: 0;
+  width: 244px;
+  margin-bottom: 30px;
+}
+.modal__description--error {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 28px;
+}
+
+.modal__close-button {
+  width: 272px;
+  height: 58px;
+  margin: 20px;
+}
+
+.modal__close-button__wrapper {
+  background-color: #f2f2f2;
+  min-width: 320px;
+}
+
+.review-header__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 36px;
+  padding-bottom: 24px;
+  text-align: center;
+}
+
+.review-header__description {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 53px;
+}
+
 .review {
   margin: 0 auto;
   padding: 0;
@@ -703,14 +757,27 @@ fieldset {
   text-align: center;
 }
 
-.review-header__title {
-  padding-top: 36px;
-  padding-bottom: 24px;
-  text-align: center;
+.social__list {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  padding-bottom: 30px;
 }
 
-.review-header__description {
-  padding-bottom: 53px;
+.title--uppercase-fill {
+  min-height: 125px;
+  background-color: #f2f2f2;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  border: none;
+  resize: none;
+  margin-bottom: 56px;
 }
 
 .video-gallery {
@@ -726,11 +793,15 @@ fieldset {
 }
 
 .video-gallery__title {
+  margin: 0;
+  padding: 0;
   text-align: center;
   padding-bottom: 20px;
 }
 
 .video-gallery__description {
+  margin: 0;
+  padding: 0;
   text-align: center;
   padding-bottom: 38px;
 }
